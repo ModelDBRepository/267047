@@ -1,0 +1,34 @@
+<html>
+
+<head>
+<style>
+h1 {
+   font-size: 1.2em;
+}
+h2 {
+   font-size: 1em;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Usage</h1>
+We give here <a href="http://www.math.pitt.edu/~bard/xpp/xpp.html" target="_blank">XPP</a> files corresponding to the simulations shown in Fig 4 and Fig 12 of <a href="https://hal.inria.fr/hal-03191275" target="_blank">https://hal.inria.fr/hal-03191275</a>. Initial condition and parameter value files for the different conditions are given in the folders "ic" and "par". From the folder containing "2_neurons.ode", type the commands below in a terminal and then click on "Initialconds", "Go". 
+
+<h2>Control condition</h2>
+xppaut 2_neurons.ode -parfile par/control.par -icfile ic/control.ic<br/><br/>
+<img src="screenshots/control_condition.png" alt="screenshot" width="500"><br/><br/>
+
+<h2>FHM-3 mutation of NaV1.1</h2>
+xppaut 2_neurons.ode -parfile par/migraine.par -icfile ic/migraine.ic<br/><br/>
+<img src="screenshots/fhm_mutation.png" alt="screenshot" width="500"><br/><br/>
+
+<h2>Epilptogenic mutation of NaV1.1</h2>
+xppaut 2_neurons.ode -parfile par/epilepsy.par -icfile ic/epilepsy.ic<br/><br/>
+<img src="screenshots/epileptogenic_mutation.png" alt="screenshot" width="500">
+
+</body>
+
+</html>
+
